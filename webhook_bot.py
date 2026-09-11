@@ -374,8 +374,8 @@ async def handle_message(message: types.Message):
 
 from aiohttp import web
 
-# Настройки webhook
-WEBHOOK_HOST = "https://neuramitya-bot.onrender.com"  # Заменим на реальный URL после деплоя
+# Настройки webhook (Render сам подставит правильный URL через переменную RENDER_EXTERNAL_URL)
+WEBHOOK_HOST = os.getenv("RENDER_EXTERNAL_URL", "https://neuramitya-bot.onrender.com")
 WEBHOOK_PATH = "/webhook"
 WEBHOOK_URL = f"{WEBHOOK_HOST}{WEBHOOK_PATH}"
 
