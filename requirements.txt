@@ -1,4 +1,5 @@
-aiogram
-openai
-python-dotenv
-aiosqlite
+   aiogram
+   openai
+   python-dotenv
+   aiosqlite
+   flask
